@@ -1,0 +1,86 @@
+body {
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none
+}
+
+body::-webkit-scrollbar {
+    display: none
+}
+
+#app {
+    min-height: 100vh;
+    background-color: #e9e9e9;
+    text-align: center;
+}
+
+#MainApp {
+    min-height: 100vh;
+}
+
+.scrollable {
+    max-height: 80vh !important;
+    padding-bottom: 2rem !important;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none
+}
+
+.scrollable::-webkit-scrollbar {
+    display: none
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+}
+
+.lds-dual-ring:after {
+    content: "";
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: 4px solid #ccc;
+    border-color: #76c76b transparent #76c76b transparent;
+    border-radius: 50%;
+    -webkit-animation: lds-dual-ring 1.2s linear infinite;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@-webkit-keyframes lds-dual-ring {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.is-loading-bar {
+    height: 0px;
+    overflow: hidden;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.is-loading-bar.is-loading {
+    height: 40px;
+    margin-top: 5px;
+}
