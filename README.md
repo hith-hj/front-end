@@ -1,6 +1,6 @@
 # front
 
-# small front end project for food recipes 
+Front-End project for food recipes 
 
 ## Project setup
 ```
